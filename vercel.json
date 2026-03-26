@@ -2,7 +2,7 @@
     "version": 2,
     "cleanUrls": true,
     "functions": {
-        "*.php": {
+        "api/*.php": {
             "runtime": "vercel-php@0.7.2"
         }
     },
@@ -10,6 +10,6 @@
         { "src": "/cri", "dest": "/cri.php" },
         { "src": "/live", "dest": "/live.php" },
         { "src": "/xml", "dest": "/xml.php" },
-        { "src": "/(.*\\.txt)", "dest": "/$1" }
+        { "src": "/robots.txt", "dest": "/robots.txt" }
     ]
 }
